@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formuláiros</h1>
+    <hr>
+    <form action="#">
+        <label for="nome">Nome <input type="text" id="nome" required></label> <br>
+
+        <label for="email">Email <input type="email" required id="email"></label> <br>
+
+        <label for="senha">Senha <input type="password" required id="senha"></label> <br>
+
+        <label for="idade">Idade <input type="number" id="idade" min="1" max="2"></label> <br>
+
+        <label for="genero">Gênero 
+            <select name="genero" id="genero">
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+            </select>
+        </label> <br>
+ 
+        <label for="termos">Aceitar termos <input type="checkbox" id="termos" name="termos" checked></label> <br>
+
+        <label for="cor">Cor preferida <input type="color" id="cor"></label> <br>
+
+        <label for="comentarios">Comentários <textarea name="comentarios" id="comentarios" rows="2" cols="30"></textarea></label> <br>
+
+        <label for="anexo">Anexo <input type="file" name="anexo" id="anexo"></label> <br>
+
+        <input type="submit" name="Enviar" id="enviar">
+    </form>
+</body>
+</html>

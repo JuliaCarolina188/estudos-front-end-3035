@@ -1,0 +1,55 @@
+.absoluto{
+    background-color: rgb(210, 212, 213);
+}
+.pixel {
+    background-color: rgb(232, 23, 23);
+    justify-items: center;
+    width: 1000px;
+    height: 100px;
+}
+.ponto {
+    background-color: rgb(232, 159, 23);
+    justify-items: center;
+    width: 1000pt;
+    height: 100pt;
+}
+.polegada {
+    background-color: rgb(255, 251, 10);
+    justify-items: center;
+    width: 10in;
+    height: 2in;
+}
+.centimetros {
+    background-color: rgb(23, 232, 23);
+    justify-items: center;
+    width: 10cm;
+    height: 100mm;
+}
+.relativo{
+    background-color: rgb(197, 198, 198);
+    height: 500px;
+}
+.em {
+    background-color: rgb(23, 232, 222);
+    justify-items: center;
+    width: 10em;
+    height: 10em;
+}
+.rem {
+    background-color: rgb(23, 72, 232);
+    justify-items: center;
+    width: 100rem;
+    height: 10rem;
+}
+.vwvh {
+    background-color: rgb(148, 23, 232);
+    justify-items: center;
+    width: 50vw;
+    height: 10vh;
+}
+.porcentagem {
+    background-color: rgb(23, 72, 232);
+    justify-items: center;
+    width: 100%;
+    height: 110%;
+}

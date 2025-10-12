@@ -1,0 +1,14 @@
+body{
+    background-color: hue-rotate(-180deg);
+    color: (540deg);
+    font-family: "Playwrite DE SAS", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+h1,h2{
+    color: rgb(5, 194, 31);
+}
+p{
+    background-color: #d30505;
+}

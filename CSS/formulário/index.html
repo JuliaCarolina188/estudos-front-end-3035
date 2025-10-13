@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <fieldset>
+                <legend>Formulário de Usuário</legend>
+                
+                <label for="nome" class="labelanimation">Nome <br><input type="text" name="nome" id="nome" class="input"></label> <br>
+
+                <label for="email" class="labelanimation">E-mail <br><input type="text" id="email" name="email" class="input"></label> <br>
+
+                <label for="telefone" class="labelanimation">Telefone <br><input type="tel" id="telefone" name="telefone" maxlength="11" class="input"></label> <br>
+                
+                <label for="nascimento">Data de nascimento <br><input type="date" id="nascimento"></label>
+
+                <div>
+                    <p>Área de desenvolvimento de aplicações</p>
+                    <label for="front"><input type="radio" id="front" name="area">Front-end</label>
+                    <label for="back"><input type="radio" id="back" name="area">Back-end</label>
+                    <label for="full"><input type="radio" id="full" name="area">Fullstack</label>
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

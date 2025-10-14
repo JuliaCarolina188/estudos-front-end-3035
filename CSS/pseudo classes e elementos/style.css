@@ -1,0 +1,65 @@
+section {
+    display: flex;
+}
+
+div {
+    background-color: rgb(139, 133, 144);
+    height: 10em;
+    width: 10em;
+    margin: 10px;
+}
+
+#div4:hover {
+    background: blue;
+}
+#div1:hover {
+    background: red;
+}
+#div2:hover {
+    background: yellow;
+}
+#div3:hover {
+    background: green;
+}
+
+a {
+    color: rgb(203, 12, 158);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a::after {
+    content: ">>";
+    color: rgb(190, 6, 147);
+    font-weight: bolder;
+}
+
+a::before {
+    content: "<<";
+    color: rgb(190, 6, 147);
+    font-weight: bolder;
+}
+
+a:hover {
+    color: rgb(91, 14, 162);
+    text-decoration: underline;
+}
+
+p::first-letter {
+    font-size: 30px;
+    color: pink;
+}
+
+p::first-line {
+    font-size: 20px;
+    color: pink;
+}
+
+p::selection {
+    background-color: blueviolet;
+    color: white;
+}
+
+input::placeholder {
+    color: blue;
+}

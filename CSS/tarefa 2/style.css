@@ -1,0 +1,24 @@
+body {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+table {
+    margin: auto;
+    margin-top: 30px;
+
+    border-collapse: separate;
+    border-spacing: 50px 5px; 
+}
+
+.linhaverde {
+    background-color: rgb(1, 152, 122);
+    color: white;
+}
+
+.linhacinza {
+    background-color: rgb(218, 218, 218);
+    color: rgb(1, 152, 122);
+    font-weight: bold;
+}

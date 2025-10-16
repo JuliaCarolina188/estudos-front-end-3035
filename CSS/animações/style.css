@@ -1,0 +1,181 @@
+.item {
+    width: 90px;
+    height: 90px;
+    margin: 30px;
+    
+    padding: 10px;
+}
+
+.itemredondo {
+    width: 90px;
+    height: 90px;
+    margin: 30px;
+    
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+}
+
+.changecolorpurple {
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.changecolorpurple:hover {
+    background-color: black;
+}
+
+.changecolorblue {
+    background-color: blue;
+    transition:0.5s;
+    transform: translate(0) scale(1);
+}
+
+.changecolorblue:hover {
+    transform: translate(80px) scale(1.5);
+}
+
+.changecolororange {
+    background-color: orange;
+    transition: 0.5s;
+}
+
+.changecolororange:hover {
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+
+.changecolorgreen {
+    background-color: green;
+    transition: width 1s, height 0.5s, background-color 0.3s 1s;
+}
+
+.changecolorgreen:hover {
+    background-color:deeppink;
+    width: 200px;
+    height: 400px;
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    transition: 1s;
+}
+
+input[type="radio"]:checked {
+    width: 150px;
+    height: 150px;
+
+    color: green;
+}
+
+
+@keyframes changered {
+    0%{
+        transform: scale(1);
+        transform: rotateZ(0deg);
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        transform: scale(1.5);
+        transform: rotateZ(90deg);
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        transform: scale(2);
+        transform: rotateZ(360deg);
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        transform: scale(0.5);
+        transform: rotateZ(90deg);
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        transform: scale(1);
+        transform: rotateZ(0deg);
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.animationred {
+    background-color: red;
+    animation-name: changered;
+    animation-duration: 2s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    from {opacity: 0; transform: rotateZ(0deg);}
+    to {opacity: 1; transform: rotateZ(360deg);}
+}
+
+.animationpink {
+    background-color: deeppink;
+    animation: fade 2s infinite alternate;
+}
+
+@keyframes movement {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+.linear {
+    background-color: purple;
+    animation: movement 3s linear;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ease {
+    background-color: blue;
+    animation: movement 3s ease;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.easeout {
+    background-color: orange;
+    animation: movement 3s ease-out;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.easein {
+    background-color: green;
+    animation: movement 3s ease-in;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

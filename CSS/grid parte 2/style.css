@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-areas: 
+    "nav header"
+    "nav main"
+    "nav footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: cyan;
+}
+
+nav {
+    grid-area: nav;
+    background-color:deeppink;
+}
+
+main {
+    grid-area: main;
+    background-color: blueviolet;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blue;
+}
+
+.container * {
+    padding: 20px;
+    border-radius: 20px;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+
+body {
+    background-image: linear-gradient(90deg, 
+    rgb(89, 203, 234), 
+    rgb(46, 55, 235)60%);
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    border-bottom: 3px solid transparent;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    margin: 0px 10%;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+p {
+    text-align: center;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+.read-more-btn {
+    background: none;
+    border: 1px solid rgb(46, 55, 235);
+    color: rgb(46, 55, 235);
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.read-more-btn:hover {
+    color: white;
+    background: rgb(46, 55, 235);
+}

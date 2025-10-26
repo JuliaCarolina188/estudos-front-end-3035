@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Posições</title>
+</head>
+<body>
+    <h1>STATIC - RELATIVE - FIXED - ABSOLUTE - STICKY</h1>
+    <hr>
+
+    <h2>STATIC: valor padrão</h2>
+    <div class="container">
+        <div class="static"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nulla dolorum nemo sunt optio iusto, itaque natus </p>
+        <div class="static"></div>
+    </div>
+
+    <hr>
+
+    <h2>RELATIVE</h2>
+    <div class="static changePosition">STATIC</div>
+    <div class="relative">RELATIVE</div>
+    <div class="sticky">STICKY</div>
+    <div class="static">STATIC</div>
+    <div class="relative changePosition">RELATIVE</div>
+
+    <hr>
+
+    <h2>ABSOLUTE</h2>
+    <div class="absolute changePosition">ABSOLUTE</div>
+    <div class="relative">
+        <div class="absolute changePosition">ABSOLUTE</div>
+    </div> 
+    <div class="sticky">STICKY</div>
+
+    <hr>
+
+    <h2>FIXED</h2>
+
+    <div class="fixed"></div>
+
+    <hr>
+
+    <h2>STICKY</h2>
+</body>
+</html>

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
+:root {
+    --lightblue: rgb(89, 203, 234);
+    --deepblue: rgb(46, 55, 235);
+}
 * {
     padding: 0;
     margin: 0;
@@ -9,8 +12,8 @@
 
 body {
     background-image: linear-gradient(90deg, 
-    rgb(89, 203, 234), 
-    rgb(46, 55, 235)60%);
+    var(--lightblue), 
+    var(--deepblue));
 }
 
 img {
@@ -55,8 +58,8 @@ span {
 
 .read-more-btn {
     background: none;
-    border: 1px solid rgb(46, 55, 235);
-    color: rgb(46, 55, 235);
+    border: 1px solid var(--deepblue);
+    color: var(--deepblue);
     padding: 10px;
     border-radius: 20px;
     width: 30%;
@@ -66,5 +69,5 @@ span {
 
 .read-more-btn:hover {
     color: white;
-    background: rgb(46, 55, 235);
+    background: var(--deepblue);
 }

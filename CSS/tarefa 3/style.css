@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+* {
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --lightgray: #f2f2f2;
+    --purple: #654694;
+}
+
+
+#logo {
+    height: 5em;
+}
+
+header {
+    background-color: var(--lightgray);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    margin-bottom: 30px;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+header a {
+    font-size: 1.5em;
+    margin: 15px;
+    color: var(--purple);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4em;
+    color: var(--purple);
+}
+
+
+main {
+    margin: 20px;
+    gap: 15px;
+
+    padding-top: 15vh;
+}
+
+#novopost {
+    width: 28%;
+    height: 60vh;
+
+    position: fixed;
+    top: 24vh;
+    right: 20px;
+
+    border: var(--purple) solid 3px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+section {
+    width: 70%;
+}
+
+footer {
+    background-color: var(--lightgray);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border: solid 2px var(--purple);
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 1.1em;
+}
+
+h2, span {
+    color: var(--purple);
+}
+
+.containerarticle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+span {
+    font-weight: bold;
+}
+
+textarea {
+    border: var(--purple) solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    height: 50%;
+}
+
+button {
+    font-size: 1.1em;
+    padding: 15px;
+    background-color: var(--purple);
+    border: var(--purple) solid 2px;
+    border-radius: 10px;
+    color: var(--lightgray);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #novopost {
+        position: static;
+        width: 90%;
+        height: 60vh;
+        margin: auto;
+    }
+    section {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}

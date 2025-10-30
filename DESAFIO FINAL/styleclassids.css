@@ -1,0 +1,124 @@
+:root {
+    --cizinha: #929292;
+    --cinzaclaro: #d8d6d6;
+    --preto: black;
+}
+
+#logo {
+    height: 7rem;
+}
+
+.containerrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containercolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#sobre {
+    padding: 20px;
+    padding-left: 7em;
+    padding-right: 7em;
+
+    height: fit-content;
+    background-color: var(--cizinha);
+    display: flex;
+    gap: 30px;
+}
+
+#sobre img {
+    height: 8em;
+}
+
+.minigap{
+    gap: 10px;
+}
+
+#novocliente {
+    background-color: var(--cinzaclaro);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 30em;
+    padding: 30px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#novocliente div {
+    display: flex;
+    flex-direction: column;
+}
+
+#novocliente h2 {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#novocliente input, select {
+    width: 60%;
+    margin: 5px;
+
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#mostrando {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.mostrandocliente{
+    width: 25vw;
+    min-width: 19vh;
+    height: 20vh;
+    background-color: var(--cinzaclaro);
+    border: var(--preto) 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#compras {
+    width: 60%;
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.comprando {
+    width: fit-content;
+    min-width: 19vh;
+    height: fit-content;
+    min-height: 19vh;
+    background-color: var(--cinzaclaro);
+    border: var(--preto) 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#compras img {
+    height: 10em;
+}

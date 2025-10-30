@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleclassids.css">
+    <link rel="stylesheet" href="styleestrutura.css">
+    <title>Sobre-Felinos Pet-shop</title>
+</head>
+<body>
+    <header>
+        <div class="containerrow">
+            <a href="index.html">
+                <img src="./assets/logo.jpg" alt="Logo com um gato fantasiado de fantasma" id="logo">
+            </a>
+            
+            <div class="containercolumn">
+                <h1>Sobre-Felinos Pet-shop</h1>
+                <span>Onde seu gato fica <b>sobrenatural</b> de bonito!</span>
+            </div>
+        </div>
+        <nav>
+            <a href="clientes.html">Nossos clientes</a>
+            <a href="produtos.html">Nossos produtos</a>
+        </nav>
+    </header>
+
+    <form id="novocliente">
+            <div>
+                <h2>Cadastre-se</h2>
+
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone">
+
+                <label for="endereco">Endereço</label>
+                <input type="text">
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+
+                <label for="atendimento">Horário do atendimento</label>
+                <input type="date" id="atendimento">
+            </div>
+
+            <div>
+                <h2>Cadastre seu bichinho</h2>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="nascimento">nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+
+                <label for="tipo">Tipo do animal</label>
+                <select name="tipo" id="tipo">
+                    <option value="gato" selected>Gato</option>
+                    <option value="cachorro">Cahorro</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="porte">Porte</label>
+                <select name="porte" id="porte">
+                    <option value="pequeno" selected>Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+            </div>
+
+    </form>
+
+    <footer id="sobre" > 
+        <img src="./assets/logo.jpg" alt="Logo com um gato fantasiado de fantasma">
+
+            <div class="containercolumn minigap">
+                <h2>Sobre a Sobre-Felinos</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ex, unde nulla tenetur iusto omnis totam impedit ipsa culpa officia dolores aperiam dolor dolorum commodi ipsam dignissimos, deleniti reprehenderit qui!</p>
+
+                <span><b>+55 (51) 99999-9999</b></span>
+            </div>
+    </footer>
+</body>
+</html>

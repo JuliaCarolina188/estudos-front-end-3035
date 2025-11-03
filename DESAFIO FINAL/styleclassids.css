@@ -83,6 +83,7 @@
 .mostrandocliente{
     width: 25vw;
     min-width: 19vh;
+    height: min-content;
     height: 20vh;
     background-color: var(--cinzaclaro);
     border: var(--preto) 2px solid;
@@ -95,7 +96,7 @@
 }
 
 #compras {
-    width: 60%;
+    width: 70%;
     
     display:flex;
     flex-wrap: wrap;
@@ -121,4 +122,43 @@
 
 #compras img {
     height: 10em;
+}
+
+@media screen and (max-width: 960px) {
+    
+}
+
+@media screen and (max-width: 860px) and (min-width:600px) {
+    #logo {
+        height: 4rem;
+    }
+
+    #novocliente {
+        width: 75%;
+    }
+
+    #sobre {
+        width: fit-content;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #sobre div {
+        margin: 30px 20px;
+    }
+
+    #sobre h2 {
+        font-size: 1.5em;
+    }
+
+    #sobre img {
+        display:none;
+    }
+    #compras {
+        width: 100%;
+    }
+    .mostrandocliente {
+        width: 40%;
+        height: min-content;
+    }
 }

@@ -124,6 +124,18 @@
     height: 10em;
 }
 
+#carrinho {
+    height: fit-content;
+    align-content: center;
+    margin: 15px;
+    font-size: 1.7em;
+    color: var(--preto);
+}
+
+#carrinhologo {
+    height: 3em;
+}
+
 @media screen and (max-width: 960px) {
     
 }
